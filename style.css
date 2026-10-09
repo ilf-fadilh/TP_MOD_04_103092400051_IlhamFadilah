@@ -1,0 +1,254 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f8fc;
+  color: #1b2a41;
+}
+
+/* Login */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9edf4;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 340px;
+  background-color: #ffffff;
+  padding: 28px 28px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(20, 30, 60, 0.10);
+}
+
+.login-card h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.login-card .subtitle {
+  font-size: 12px;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.login-card label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.login-card input:focus {
+  background-color: #dbeafe;
+  border-color: #2563eb;
+}
+
+.btn-masuk {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #7dd3fc;
+  border-radius: 4px;
+  background-color: #7dd3fc;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-masuk:hover {
+  background-color: #41b5eb;
+  color: #ffffff;
+  border-color: #41b5eb;
+}
+
+/* Index */
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 26px;
+  height: 64px;
+  background-color: #7dd3fc;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 7px 10px;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.menu a:hover {
+  background-color: #7dd3fc;
+  color: #1b2a49;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 24px 40px;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: #ffffff;
+  background-image:
+    linear-gradient(rgba(0, 18, 53, 0.55), rgba(0, 26, 40, 0.55)),
+    url("images/hero-frieren.jpeg");
+  background-size: cover;
+  background-position:  center;
+  background-position: 30% 25%;
+  background-size: 100%
+}
+
+.hero h2 {
+  font-size: 26px;
+}
+
+.highlight {
+  color: #7dd3fc;
+  font-size: 36px;
+}
+
+/* Judul section */
+.section-title {
+  font-size: 18px;
+  margin: 34px 0 14px;
+}
+
+/* Products */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(20, 30, 60, 0.08);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 12px 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* About */
+.about-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3b4a63;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    padding: 0 14px;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .highlight {
+    font-size: 30px;
+  }
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9edf4;
+  background-image:
+    url("images/frieren-dangak.png"),
+    url("images/frieren-dangak.png"),
+    url("images/frieren-dangak.png"),
+    url("images/frieren-dangak.png");
+  background-position:
+    top left,
+    top right,
+    bottom left,
+    bottom right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 250px, 250px, 250px, 250px;
+}

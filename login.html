@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - PC Parts Store Frieren</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/frieren-dangak.png" type="image/png" />
+  </head>
+  <body class="login-page">
+    <main class="login-card">
+      <h1>PC Parts Store</h1>
+      <p class="subtitle">Masuk untuk melihat komponen PC.</p>
+
+      <form
+        onsubmit="
+          event.preventDefault();
+          window.location.href = 'index.html';
+        "
+      >
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Nama pengguna"
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Kata sandi"
+        />
+        <button type="submit" class="btn-masuk">Masuk</button>
+      </form>
+    </main>
+  </body>
+</html>
